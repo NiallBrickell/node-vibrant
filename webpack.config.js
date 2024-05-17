@@ -15,11 +15,7 @@ module.exports = {
     mode: "production",
     optimization: {
         minimize: true,
-        minimizer: [
-            new TerserPlugin({
-                include: /\.min\.js$/,
-            }),
-        ],
+        minimizer: [new TerserPlugin()],
     },
     module: {
         rules: [
